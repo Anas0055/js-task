@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting</title>
+    <script>
+        // JavaScript code to prompt the user and display a customized greeting
+        function displayGreeting() {
+            // Prompt the user for their name
+            var name = prompt("What is your name?");
+            
+            // Prompt the user for their age
+            var age = prompt("How old are you?");
+            
+            // Create a personalized greeting message
+            var message = "Hello, " + name + "! You are " + age + " years old.";
+            
+            // Display the message in an alert
+            alert(message);
+        }
+
+        // Execute the function when the page loads
+        window.onload = displayGreeting;
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Greeting Page!</h1>
+    <p>Please wait while we prepare a personalized message for you.</p>
+</body>
+</html>

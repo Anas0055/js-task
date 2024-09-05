@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting</title>
+    <script>
+        function displayGreeting() {
+            // Prompt the user for their name and favorite color
+            let userName = prompt("What is your name?");
+            let favoriteColor = prompt("What is your favorite color?");
+            
+            // Display an alert with the personalized greeting
+            alert(`Hello ${userName}, I see your favorite color is ${favoriteColor}!`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Personalized Greeting Page</h1>
+    <button onclick="displayGreeting()">Click here for a personalized greeting</button>
+</body>
+</html>

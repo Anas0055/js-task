@@ -1,0 +1,50 @@
+<!-- **Simple Quiz**
+- **Objective:** Create a simple quiz that checks the user's knowledge.
+- **Details:**
+ - Ask the user three questions (e.g., "What is 2+2?", "What is the 
+capital of France?", "Which planet is known as the Red Planet?").
+ - Use `if...else` statements to check the answers.
+ - Display a message based on the number of correct answers.
+ - Example: "You got 2 out of 3 correct!" -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <script>
+        function startQuiz() {
+            // Initialize score
+            var score = 0;
+
+            // Question 1
+            var answer1 = prompt("What is 2+2?");
+            if (answer1 === "4") {
+                score++;
+            }
+
+            // Question 2
+            var answer2 = prompt("What is the capital of France?");
+            if (answer2.toLowerCase() === "paris") {
+                score++;
+            }
+
+            // Question 3
+            var answer3 = prompt("Which planet is known as the Red Planet?");
+            if (answer3.toLowerCase() === "mars") {
+                score++;
+            }
+
+            // Display the result
+            alert("You got " + score + " out of 3 correct!");
+        }
+
+        // Execute the function when the page loads
+        window.onload = startQuiz;
+    </script>
+</head>
+<body>
+    <h1>Simple Quiz</h1>
+    <p>Please wait while we start the quiz.</p>
+</body>
+</html>

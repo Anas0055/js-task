@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script>
+        // JavaScript code for a basic calculator
+        function performCalculation() {
+            // Prompt the user for the first number
+            var num1 = parseFloat(prompt("Enter the first number:"));
+
+            // Prompt the user for the second number
+            var num2 = parseFloat(prompt("Enter the second number:"));
+
+            // Prompt the user for the operation
+            var operation = prompt("Enter the operation (+, -, *, /):");
+
+            // Variable to store the result
+            var result;
+
+            // Perform the calculation based on the operation
+            switch (operation) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = "Error: Division by zero.";
+                    }
+                    break;
+                default:
+                    result = "Invalid operation.";
+            }
+
+            // Display the result in an alert
+            alert("Result: " + result);
+        }
+
+        // Execute the function when the page loads
+        window.onload = performCalculation;
+    </script>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <p>Please wait while we calculate your result.</p>
+</body>
+</html>
